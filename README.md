@@ -3,9 +3,9 @@ A simple project to test out a custom loading page.
 
 ## How It's Made:
 **Tech used:**<br/>
-**HTML** is used to display a static webpage as well as an overlay page blocking the inital.
-**CSS** is used for styling the page. It is also responsible for the animation on the loading page. 
-**Javascript** is used for the pages clickable functionality. It allows the loading page to be hidden and removed. 
+**HTML** <br/>is used to display a static webpage as well as an overlay page blocking the inital.
+**CSS** <br/>is used for styling the page. It is also responsible for the animation on the loading page. 
+**Javascript** <br/>is used for the pages clickable functionality. It allows the loading page to be hidden and removed. 
 
 ## Lessons Learned:
 
