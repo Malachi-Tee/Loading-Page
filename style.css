@@ -1,0 +1,90 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body {
+  background-color: rgb(31, 3, 3);
+  box-sizing: border-box;
+}
+
+#mainContainer{
+  display: grid;
+  grid: 200px / auto;
+}
+#overlayPage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height:100vh;
+  background-color: rgba(58, 38, 38, 0.836);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+#overlayEnterButton{
+  z-index: 1;
+  cursor: pointer;
+}
+#overlayEnterButton:hover{
+  color: red;
+  transition: color .45s;
+}
+.overlayPage-hidden{
+  opacity: 0 !important;
+  visibility: hidden !important; 
+}
+
+#overlayPage::after{
+  content: "";
+  width: 10em;
+  height: 10em;
+  border: 15px solid #000000;
+  position: fixed;
+  border-top-color: #c70000;
+  border-radius: 50%;
+  animation: loading 0.84s ease infinite;
+}
+
+@keyframes loading{
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+}
+
+#header{
+  margin: 0;
+  box-sizing: border-box;
+  height: 75px;
+  display: flex;
+  width: 100vw;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, rgb(35, 152, 187), rgb(179, 26, 26));
+  border-image-slice: 1;
+  background: linear-gradient(90deg, rgb(179, 26, 26) 35%, rgb(35, 152, 187)); 
+}
+.header{
+  display: flex;
+}
+.refresh{
+  display: flex;
+  align-self: inherit;
+}
+ol{
+  display: flex;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
